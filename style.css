@@ -15,7 +15,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -183,4 +183,200 @@ header button {
     right: 25rem;
     font-size: 8rem;
     color: #ffffff;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* -----------------RESPONSIVE-USING-MEDIA-QUERIES-------------------- */
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+
+/* -------------LARGER-SCREEN------------------ */
+
+
+@media screen and (max-width: 1295px) {
+
+    body {
+        background-image: url(./assets/bg.png);
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    /* ------------NAVBAR------------ */
+
+     nav {
+        
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    
+    .list-items {
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+        border-bottom: 2px solid #ffffff;
+    }
+    
+    .list-items a {
+           display: inline-block;
+           margin: 0 0.8rem;
+           font-size: 1.2rem;   
+    }
+
+
+    .list-items div {
+        display: flex;
+        margin-left: 1rem;
+        align-items: center;
+    }
+    
+    .phone-icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+    
+    .list-items p {
+        margin-left: 1rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.8rem;
+    } 
+ 
+
+    /* ---------HEADER-SECTION----------- */
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+
+    .heading {
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        width: 80%;
+        text-align: center
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+
+    header button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        color: #ffffff;
+        border: 3px solid #ffffff;
+        background-color: transparent;
+        border-radius: 3rem;   
+        
+    }
+
+
+    .box1 {
+        position: static;
+        width: 60%;
+        margin: 3rem auto;
+        text-align: center;
+        
+       
+    }
+    
+    .box2 {
+        position: static;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+
+    .stick1 {
+       display: none
+    }
+
+    .stick2 {
+        display: none
+     }
+    
+
+
+}
+
+
+/* -------------LARGE-SCREEN------------------ */
+
+
+@media screen and (max-width: 1020px) { 
+
+    /* -----------NAVBAR--------------- */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+  /* -------------MEDIUM-SCREEN------------------ */
+
+
+@media screen and (max-width: 760px) { 
+    
+
+    /* -----------NAVBAR--------------- */
+
+    .list-items {
+        display: none;
+    }
+
+
+    .logo img {
+        width: 8rem;
+    }
+
+    nav {
+        display: block;
+        flex-direction: column;
+       
+        margin-top: 2rem;
+    }
+
+/* -----------HEADER--------------- */
+
+    .heading h1 {
+        font-size: 2.2rem;
+        color: #ffffff;  
+        margin-bottom: 4rem;
+        word-spacing: 0.3rem;   
+    }
+    
+    header button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #ffffff;
+        border: 3px solid #ffffff;
+        background-color: transparent;
+        border-radius: 3rem;
+        
+    }
+
+
 }
